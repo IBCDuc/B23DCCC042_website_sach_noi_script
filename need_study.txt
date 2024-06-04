@@ -1,0 +1,10 @@
+req knowlegde
+- node.js
+- MongoDB
+- CRUD
+- express
+- jQuery
+- Bootstrap
+- handlebars (dont know )
+- html
+- css
