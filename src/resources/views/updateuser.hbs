@@ -1,0 +1,37 @@
+<div class="custom container">
+    
+        
+        
+        <form action="/auth/update-user" method="post">
+        {{#each user}}
+            <div class="nice-form-group">
+                <label>id</label>
+                <input type="text" value="{{id}}" name = 'id' readonly>
+            </div>
+            <div class="nice-form-group">
+                <label>Tên người dùng:</label>
+                <input type="text" value="{{name}}" name = 'name' required>
+            </div>
+            
+            <div class="nice-form-group">
+                <label>Email:</label>
+                <input type="tel" value="{{email}}" name = 'email'required>
+            </div>
+            
+            <div class="nice-form-group">
+                <label>Mật khẩu:</label>
+                <input type="password"  value="{{password}}" name = 'pass' required>
+            </div>
+            
+            {{#if message}}
+                <h4>{{message}}</h4>
+            {{/if}}
+            <div class ='button_st'>
+                <button type = "submit">Sửa thông tin</button>
+            </div>
+        {{/each}}
+            </form>
+             
+        
+   
+</div>

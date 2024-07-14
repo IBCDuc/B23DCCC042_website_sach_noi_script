@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'netflixsans';
+  src: url(NetflixSans-Light.otf);
+  font-weight: 400; }
+
+/* footer.css */
+.footer {
+  background-color: #0e345a;
+  color: #fff;
+  padding: 10px 0;
+  /* Giảm padding để giảm kích thước footer */
+  width: 100%;
+  font-family: 'netflixsans'; }
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  min-width: 250px;
+  margin: 5px 0;
+  /* Giảm margin để giảm kích thước footer */ }
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+  margin-bottom: 10px;
+  /* Giảm margin để giảm kích thước footer */
+  font-size: 16px;
+  /* Giảm font-size nếu cần */
+  color: #ffcc00; }
+
+.footer-left p, .footer-center p, .footer-right a {
+  margin-bottom: 5px;
+  /* Giảm margin để giảm kích thước footer */
+  color: #bbb;
+  text-decoration: none; }
+
+.footer-right a:hover {
+  color: #ffcc00; }
+
+.footer-bottom {
+  text-align: center;
+  padding: 5px 0;
+  /* Giảm padding để giảm kích thước footer */
+  border-top: 1px solid #444;
+  margin-top: 10px;
+  /* Giảm margin để giảm kích thước footer */ }
+
+.footer-bottom p {
+  margin: 0;
+  color: #bbb;
+  font-size: 10px;
+  /* Giảm font-size nếu cần */ }
+
+.color {
+  background-color: #0e345a; }
+
+.enter_email {
+  background-color: transparent;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 4px 12px 4px 12px;
+  color: white;
+  transition: 0.5s;
+  width: 150px;
+  margin-top: 9px; }
+
+.sign button {
+  width: 150px;
+  background-color: white;
+  display: inline-block;
+  border: 2px solid white;
+  transition: 0.5s;
+  margin-top: 8px; }
+
+.sign button:hover {
+  background-color: transparent;
+  transition: 0.5s;
+  border: 2px solid transparent;
+  color: white; }
+
+.foot h5 {
+  font-size: 15px;
+  margin-bottom: 8px; }
+
+.foot a {
+  font-size: 14px; }

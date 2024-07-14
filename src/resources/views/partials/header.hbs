@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg sticky-top nar" data-bs-theme="light">
+    <div class="container-xl">
+      <a class="navbar-brand" href="/"><img src="/img/tk-book.png" alt="" style = "height: 37px; width: 55px; margin-bottom: 3px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link font_si nut" aria-current="page" href="/">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font_si" href="/books">Sách</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font_si " aria-disabled="true" href="/aboutme">Blog</a>
+          </li>
+            <form class="d-flex ms-5 rounded-5 " role="search" action = "/books" style="height: 35px" METHOD = 'GET'>
+            <input class="form-control me-2 w-50 font_si" type="search" placeholder="Tìm kiếm..." aria-label="Search" name ='query'>
+            <button class="btn btn-outline-success font_si nut" type="submit"><span>Search</span></button>
+          </form>
+        </ul>
+        
+        <div class = "d-flex justify-content-center align-items-center gap-3">
+          <a href="/login" class = "text-black "> Login</a>
+          <a href="/signup" class = "text-black text-decoration-none px-2 py-1 rounded-4"
+          style="background-color: #e28dda">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </nav>

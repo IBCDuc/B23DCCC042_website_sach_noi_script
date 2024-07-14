@@ -1,0 +1,31 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.table-header, .table-row {
+    display: flex;
+    width: 100%;
+}
+.table-header {
+    background-color: #dfcfcf;
+    font-weight: bold;
+}
+.table-cell {
+    flex: 1;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+}
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+.action-buttons a{
+    text-decoration: none;
+    color: rgb(43, 38, 38);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #dfcfcf;
+    
+}
+

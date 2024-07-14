@@ -1,0 +1,39 @@
+<div class="custom container">
+<form action="/auth/add-book" method="post">
+    <div class="nice-form-group">
+        <label>Tên sách:</label>
+        <input type="text" value="" name = 'book_name' required>
+    </div>
+    
+    <div class="nice-form-group">
+        <label>Tên tác giả:</label>
+        <input type="text" value="" name = 'author_name' required>
+    </div>
+    
+    <div class="nice-form-group">
+        <label>Thể loại:</label>
+        <input type="tel" value="" name = 'category'required>
+    </div>
+    
+    <div class="nice-form-group">
+        <label>Ảnh bìa:</label>
+        <input type="url"  value="" name = 'url' required>
+    </div>
+    
+    <div class="nice-form-group">
+        <label>Mô tả:</label>
+        <input type="text" name = 'description'  required>
+    </div>
+    
+    <div class="nice-form-group">
+        <label>Thư mục âm thanh:</label>
+        <input type="search" value="" />
+    </div>
+    {{#if message}}
+        <h4>{{message}}</h4>
+    {{/if}}
+    <div class ='button_st'>
+        <button>Thêm sách</button>
+    </div>
+</form>
+</div>

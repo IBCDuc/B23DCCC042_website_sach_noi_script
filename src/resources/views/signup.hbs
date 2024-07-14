@@ -1,0 +1,28 @@
+  <div class="wrapper">
+    <form action = '/auth/signup' METHOD = "POST">
+      <h2>Đăng Ký</h2>
+      <div class="input-field">
+        <input type="text" name = 'name' required>
+        <label>Tên đăng ký </label>
+      </div>
+        <div class="input-field">
+        <input type="text" name = 'email' required>
+        <label>Email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id = 'password' name = 'password' required>
+        <label>Mật khẩu</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Hiện mật khẩu</p>
+        </label>
+        <a href="/signup" style = 'margin-bottom: 15px';>Quên mật khẩu?</a>
+      </div>
+      <button type="submit">Đăng Ký</button>
+      <div class="register">
+        <p>Có tài khoản? <a href="http://localhost:3000/login">Đăng nhập</a></p>
+      </div>
+    </form>
+  </div>

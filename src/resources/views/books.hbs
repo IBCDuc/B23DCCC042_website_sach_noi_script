@@ -1,0 +1,56 @@
+<div class="container br">
+    <div class  = 'row'>
+        <div class="sizecol col-md-3">
+            <div class = "cate-heading">
+                <h5>Phân loại</h5>
+                <hr>
+            </div>
+            <div class="accordion">
+                <div class="contentBx">
+                    <div class="label" >Thể loại</div>
+                        <div class="content">
+                                <a href="http://localhost:3000/books" style = "font-weight: 800;">Tất cả</a><br>
+                                <a href="http://localhost:3000/books/phan-loai/cong-nghe">Công nghệ</a><br>
+                                <a href="http://localhost:3000/books/phan-loai/nau-an">Nấu ăn</a><br>
+                                <a href="">Khoa học</a><br>
+                                <a href="http://localhost:3000/books/phan-loai/tieu-thuyet">Tiểu thuyết</a><br>
+                                <a href="http://localhost:3000/books/phan-loai/ngon-tinh">Ngôn tình</a><br>
+                                <a href="">Văn học Việt Nam</a><br>
+                                <a href="http://localhost:3000/books/phan-loai/triet-ly">Triết lý</a>
+                            </div>
+                    </div>
+                    <hr style = "position: relative; margin-top:5px;">
+                <div class="contentBx">
+                    <div class="label" >Tác giả</div>
+                        <div class="content2">
+                                <a href="http://localhost:3000/books" style = "font-weight: 800;" >Tất cả</a><br>
+                                <a href="http://localhost:3000/books/phan-loai/christian-grenier">Christian Grenier</a><br>
+                                <a href="http://localhost:3000/books/phan-loai/ernesto-che-guevara">Ernesto Che Guevara</a><br>
+                                <a href="http://localhost:3000/books/phan-loai/nguyen-nhat-anh">Nguyễn Nhật Ánh</a><br>
+                                <a href="http://localhost:3000/books/phan-loai/nguyen-thuy-linh">Nguyễn Thuỳ Linh</a><br>
+                                <a href="http://localhost:3000/books/phan-loai/barthes">Roland Barthes</a><br>
+                                <a href="http://localhost:3000/books/phan-loai/fumio">Sasaki Fumio</a>
+                        </div>
+                </div>
+                <hr style = "position: relative; margin-top:5px;">
+                
+            </div>
+        </div>
+            <div class="container1 col-md-9 row">
+                        {{#each books}}
+                        <div class = 'container_con'>
+                            <div class="image-content">
+                                    <img src="{{img}}" alt="">
+                                    <div class="text-overlay">
+                                        <h1>{{name}}</h1>
+                                        <h2>Tác giả: {{author}}</h2>
+                                        <br>
+                                        <a href="/books/{{link_name}}"><button>ĐỌC THÊM</button></a>
+                                    </div>      
+                                </div> 
+                            <div class = 'title'><a href="/books/{{link_name}}">{{name}}</a>  </div>
+                            </div>
+                        {{/each}}
+                </div>
+    </div>   
+</div>

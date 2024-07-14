@@ -1,0 +1,26 @@
+<div class="custom container">
+<form action="/auth/add-user" method="post">
+    <div class="nice-form-group">
+        <label>Tên người dùng:</label>
+        <input type="text" value="" name = 'name' required>
+    </div>
+    
+    <div class="nice-form-group">
+        <label>Email:</label>
+        <input type="tel" value="" name = 'email'required>
+    </div>
+    
+    <div class="nice-form-group">
+        <label>Mật khẩu:</label>
+        <input type="text"  value="" name = 'pass' required>
+    </div>
+    
+    
+    {{#if message}}
+        <h4>{{message}}</h4>
+    {{/if}}
+    <div class ='button_st'>
+        <button>Thêm người dùng</button>
+    </div>
+</form>
+</div>

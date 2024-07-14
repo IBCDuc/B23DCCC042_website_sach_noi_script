@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'netflixsans-medium';
+  src: url(NetflixSans-Medium.otf);
+  font-weight: 400; }
+
+.search_bar {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border-radius: 28px;
+  background: #f6f6f6; }
+
+.font_si:hover {
+  text-decoration: none;
+  color: black; }
+
+.nar {
+  background-color: #f8f4f1;
+  font-family: 'netflixsans-medium'; }

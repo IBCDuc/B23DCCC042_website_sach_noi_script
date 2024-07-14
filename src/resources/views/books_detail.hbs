@@ -1,0 +1,87 @@
+<div class = 'container-xl'>
+    <div class="container-bk row" style = 'margin-top: 25px;'>
+        {{#each books_query_ori}}
+        <div class = "image-content1 col-md-3 " style = 'margin-left: 21px;'>
+            <img src="{{img}}" alt="">
+        </div>
+
+        <div class = "info col-md-6">
+            <h3>{{name}}</h3>
+            <div class = 'row container-c'>
+                <div class = 'col-md-6'>
+                    <h6>Tác giả</h6>
+                    <h6 style = 'font-family: netflixsans-light'>{{author}}</h6>
+                </div>
+                <div class = 'col-md-6'>
+                    <h6>Thể loại</h6>
+                    <h6 style = 'font-family: netflixsans-light'>Tình cảm, Drama</h6>
+                </div>
+            </div>
+            <hr style = "width: 715px;">
+            <div class ="button_style">
+                <br>
+                <button><img src="/img/png/play (1).png" alt="" class = 'play'> <span >Đọc sách</span></button>
+                <button><img src="/img/png/headphones.png" alt="" class = 'play' onclick="playAudio('/audio/mat-biec-p1-5p.mp3')"> <span>Nghe sách</span></button>
+            </div>
+            <br><br><h3>Mô tả</h3>
+            <br><h6 style = 'font-family: netflixsans-light'>"Mắt Biếc" là một tiểu thuyết nổi tiếng của nhà văn Nguyễn Nhật Ánh, xuất bản lần đầu năm 1990. Đây là một tác phẩm văn học thiếu nhi và lãng mạn, kể về câu chuyện tình yêu trong sáng và cảm động của Ngạn và Hà Lan, hai người bạn từ thời thơ ấu. Ngạn, cậu bé làng quê hiền lành và giàu tình cảm, đã đem lòng yêu mến Hà Lan - cô gái có đôi mắt biếc đẹp lạ thường. Tuy nhiên, cuộc sống đưa đẩy, Hà Lan rời xa làng quê lên thành phố, rồi bị...</h6>
+            {{/each}}
+            <h5>Danh sách chương(0)</h5>
+            <hr style = "width: 715px;">
+            {{#each books_query}}
+            <div class = "audio_file">
+                <h6 >Phần 1</h6>
+                <h6 style="margin-left: 145px;">00:00s</h6>
+                <h6 style="margin-left: 145px; margin-right: 190px;">28/6/2024</h6>
+                <button><img src="/img/png/play (1).png" alt="" onclick="playAudio('/audio/{{audio_link}}')"></button>
+            </div>
+            {{/each}}
+        </div>
+            
+        
+    </div>
+    <h3 style="font-weight: 800; margin-top: 70px; margin-left: 20px">Có thể bạn sẽ thích</h3>
+    <div class = "wrap">
+        <div id = 'backk'><button><span>&larr;</span></button></div>
+        <div id = 'next'><button><span>&rarr;</span></button></div>
+        <div class="anh">
+            <div class="image-content2">
+                    <img src="/img/mat-biec.jpg" alt="">
+                    <img src="/img/co-gai.jpg" alt="">
+                    <img src="/img/loi-song.jpg" alt="">
+                    <img src="/img/block-chain.jpg" alt="">
+                    <img src="/img/nhat-ky-trong-tu.jpg" alt="">
+                    <img src="/img/toi-thay.jpg" alt="">
+                    
+            </div>
+            <div class="image-content2">
+                        <img src="/img/che_guevara.jpg" alt="">
+                    <img src="/img/may-tinh-sat-thu.jpg" alt="">
+                    <img src="/img/loi-song.jpg" alt="">
+                    <img src="/img/block-chain.jpg" alt="">
+                    <img src="/img/nhung-huyen-thoai.jpg" alt="">
+                    <img src="/img/toi-thay.jpg" alt="">
+            </div>
+            <div class="image-content2">
+                    <img src="/img/nha-gia-kim.jpg" alt="">
+                    <img src="/img/toi-la-ai.jpg" alt="">
+                    <img src="/img/tu-duy-nhu-mot-he-thong.jpg" alt="">
+                    <img src="/img/300-mon-an.jpg" alt="">
+                    <img src="/img/bien-luc-dia.jpg" alt="">
+                    <img src="/img/block-chain.jpg" alt="">
+            </div>
+        </div>
+        
+  </div>
+  
+
+
+
+</div>  
+<div id="audioContainer">
+        <audio id="audioPlayer" controls>
+          <source id="audioSource" src="" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button id = "back" onclick="endAudio('/audio/mat-biec-p1-5p.mp3')"><img src="/img/png/close.png" alt=""></button>
+</div>

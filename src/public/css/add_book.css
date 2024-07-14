@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* Định dạng cho toàn bộ form */
+.custom {
+  background-color: #f8f4f1;
+  width: 830px;
+  margin-top: 10px; }
+
+.nice-form-group {
+  margin-bottom: 15px; }
+
+/* Định dạng cho nhãn */
+.nice-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; }
+
+/* Định dạng cho ô nhập liệu */
+.nice-form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; }
+
+/* Định dạng khi ô nhập liệu được focus */
+.nice-form-group input:focus {
+  border-color: #5b9bd5;
+  outline: none; }
+
+/* Định dạng cho ô nhập liệu bị vô hiệu hóa */
+.nice-form-group input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed; }
+
+.button_st button {
+  border-radius: 8px;
+  background-color: #ccc;
+  font-size: 15px;
+  padding: 5px;
+  border-color: aqua; }
+
+body {
+  font-size: 15px; }
